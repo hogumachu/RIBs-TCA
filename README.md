@@ -4,9 +4,12 @@ RIBs consists of Router, Interactor, Builder and View(optional). RIBs+TCA replac
 
 ## Why use?
 - Role separation is very well implemented (Advantages of RIBs).
-- Navigation is not handled in the View. So you can use [µFeatures architecture](https://docs.tuist.io/guide/scale/ufeatures-architecture.html).
+- Navigation is not handled in the View.
+  - Modularization of interface/implementation structures is possible.
+  - So you can use [µFeatures architecture](https://docs.tuist.io/guide/scale/ufeatures-architecture.html).
 - Even if you're already using RIBs, you can easily add SwiftUI and TCA.
 - You can choose between UIKit and SwiftUI depending on the situation.
+- You can leverage the great features of TCA (such as dependency injection, etc).
 
 ## Differences
 - There is a Reducer called Feature, but the Interactor defines the State, Action, and the behavior of the Reducer.
